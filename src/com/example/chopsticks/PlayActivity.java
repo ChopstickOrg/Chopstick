@@ -313,16 +313,16 @@ public class PlayActivity extends Activity {
 
 	}
 
-	@Override
-	public void onDestroy() // main thread stopped
-	{
-		super.onDestroy();
-		System.runFinalizersOnExit(true); // wait for threads to exit before
-											// clearing app
-		android.os.Process.killProcess(android.os.Process.myPid()); // remove
-																	// app from
-																	// memory
-	}
+//	@Override
+//	public void onDestroy() // main thread stopped
+//	{
+//		super.onDestroy();
+//		System.runFinalizersOnExit(true); // wait for threads to exit before
+//											// clearing app
+//		android.os.Process.killProcess(android.os.Process.myPid()); // remove
+//																	// app from
+//																	// memory
+//	}
 
 	@Override
 	public void onConfigurationChanged(Configuration newConfig) {
@@ -333,30 +333,30 @@ public class PlayActivity extends Activity {
 	 * onBackPressed. If back button pressed, it should ask
 	 * "Are you sure you want to quit?"
 	 */
-	@Override
-	public void onBackPressed() {
-
-		AlertDialog.Builder alert = new AlertDialog.Builder(PlayActivity.this);
-
-		alert.setTitle("Are you sure you want to quit?");
-		// if user want to quit, do this.
-		alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-			public void onClick(DialogInterface dialog, int id) {
-				Intent intent = new Intent(Intent.ACTION_MAIN);
-				intent.addCategory(Intent.CATEGORY_HOME);
-				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-				startActivity(intent);
-			}
-		});
-		// if NO ,do nothing
-		alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
-			public void onClick(DialogInterface dialog, int id) {
-
-			}
-		});
-
-		alert.show();
-	}
+//	@Override
+//	public void onBackPressed() {
+//
+//		AlertDialog.Builder alert = new AlertDialog.Builder(PlayActivity.this);
+//
+//		alert.setTitle("Are you sure you want to quit?");
+//		// if user want to quit, do this.
+//		alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+//			public void onClick(DialogInterface dialog, int id) {
+//				Intent intent = new Intent(Intent.ACTION_MAIN);
+//				intent.addCategory(Intent.CATEGORY_HOME);
+//				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//				startActivity(intent);
+//			}
+//		});
+//		// if NO ,do nothing
+//		alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
+//			public void onClick(DialogInterface dialog, int id) {
+//
+//			}
+//		});
+//
+//		alert.show();
+//	}
 
 	/**
 	 * Handling viewFlipper animations -
