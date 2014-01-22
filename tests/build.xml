@@ -88,5 +88,12 @@
     -->
     <!-- version-tag: 1 -->
     <import file="${sdk.dir}/tools/ant/build.xml" />
-
+<target name="clean">
+	
+	
+</target> 
+<target name="instrument">
+	
+	
+</target> 
 </project>
