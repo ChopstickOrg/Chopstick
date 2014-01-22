@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.3" sequence="0" timestamp="1390385122164" analysisTimestamp="1390385122279" release="">
+  <Project projectName="">
+    <Jar>/home/amila/Projects/Chopstick/bin</Jar>
+    <AuxClasspathEntry>/home/amila/Projects/Chopstick/${android.jar}</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="MS_CANNOT_BE_FINAL" priority="2" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.example.staticdata.StaticData">
+      <SourceLine classname="com.example.staticdata.StaticData" start="8" end="10" sourcefile="StaticData.java" sourcepath="com/example/staticdata/StaticData.java"/>
+    </Class>
+    <Field classname="com.example.staticdata.StaticData" name="balance" signature="Ljava/lang/Float;" isStatic="true">
+      <SourceLine classname="com.example.staticdata.StaticData" sourcefile="StaticData.java" sourcepath="com/example/staticdata/StaticData.java"/>
+    </Field>
+    <SourceLine classname="com.example.staticdata.StaticData" start="9" end="9" startBytecode="5" endBytecode="5" sourcefile="StaticData.java" sourcepath="com/example/staticdata/StaticData.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.example.staticdata.StaticData">
+      <SourceLine classname="com.example.staticdata.StaticData" start="8" end="10" sourcefile="StaticData.java" sourcepath="com/example/staticdata/StaticData.java"/>
+    </Class>
+    <Field classname="com.example.staticdata.StaticData" name="winList" signature="Ljava/util/List;" isStatic="true">
+      <SourceLine classname="com.example.staticdata.StaticData" sourcefile="StaticData.java" sourcepath="com/example/staticdata/StaticData.java"/>
+    </Field>
+    <SourceLine classname="com.example.staticdata.StaticData" start="10" end="10" startBytecode="15" endBytecode="15" sourcefile="StaticData.java" sourcepath="com/example/staticdata/StaticData.java"/>
+  </BugInstance>
+  <Errors errors="1" missingClasses="29">
+    <Error>
+      <ErrorMessage>File not found: filesystem:/home/amila/Projects/Chopstick/${android.jar}</ErrorMessage>
+    </Error>
+    <MissingClass>android.app.Activity</MissingClass>
+    <MissingClass>android.content.Intent</MissingClass>
+    <MissingClass>android.graphics.Color</MissingClass>
+    <MissingClass>android.graphics.Point</MissingClass>
+    <MissingClass>android.graphics.drawable.AnimationDrawable</MissingClass>
+    <MissingClass>android.media.AudioManager</MissingClass>
+    <MissingClass>android.media.SoundPool</MissingClass>
+    <MissingClass>android.media.SoundPool$OnLoadCompleteListener</MissingClass>
+    <MissingClass>android.os.AsyncTask</MissingClass>
+    <MissingClass>android.os.Handler</MissingClass>
+    <MissingClass>android.view.Display</MissingClass>
+    <MissingClass>android.view.LayoutInflater</MissingClass>
+    <MissingClass>android.view.MenuInflater</MissingClass>
+    <MissingClass>android.view.MotionEvent</MissingClass>
+    <MissingClass>android.view.View</MissingClass>
+    <MissingClass>android.view.View$OnClickListener</MissingClass>
+    <MissingClass>android.view.ViewGroup</MissingClass>
+    <MissingClass>android.view.ViewGroup$LayoutParams</MissingClass>
+    <MissingClass>android.view.WindowManager</MissingClass>
+    <MissingClass>android.widget.AdapterView$OnItemClickListener</MissingClass>
+    <MissingClass>android.widget.ArrayAdapter</MissingClass>
+    <MissingClass>android.widget.HorizontalScrollView</MissingClass>
+    <MissingClass>android.widget.ImageButton</MissingClass>
+    <MissingClass>android.widget.ImageView</MissingClass>
+    <MissingClass>android.widget.LinearLayout</MissingClass>
+    <MissingClass>android.widget.ListView</MissingClass>
+    <MissingClass>android.widget.TextView</MissingClass>
+    <MissingClass>android.widget.ViewFlipper</MissingClass>
+    <MissingClass>com.google.common.collect.Lists</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Wed, 22 Jan 2014 15:35:22 +0530" total_classes="35" referenced_classes="58" total_bugs="2" total_size="1437" num_packages="3" vm_version="23.21-b01" cpu_seconds="20.13" clock_seconds="7.83" peak_mbytes="134.25" alloc_mbytes="1747.56" gc_seconds="0.05" priority_2="1" priority_1="1">
+    <PackageStats package="com.example.chopsticks" total_bugs="0" total_types="33" total_size="1419">
+      <ClassStats class="com.example.chopsticks.BuildConfig" sourceFile="BuildConfig.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.MainActivity" sourceFile="MainActivity.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.MainActivity$1" sourceFile="MainActivity.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.PlayActivity" sourceFile="PlayActivity.java" interface="false" size="329" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.PlayActivity$1" sourceFile="PlayActivity.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.PlayActivity$10" sourceFile="PlayActivity.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.PlayActivity$11" sourceFile="PlayActivity.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.PlayActivity$2" sourceFile="PlayActivity.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.PlayActivity$3" sourceFile="PlayActivity.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.PlayActivity$4" sourceFile="PlayActivity.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.PlayActivity$5" sourceFile="PlayActivity.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.PlayActivity$5$1" sourceFile="PlayActivity.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.PlayActivity$5$1$1" sourceFile="PlayActivity.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.PlayActivity$6" sourceFile="PlayActivity.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.PlayActivity$7" sourceFile="PlayActivity.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.PlayActivity$8" sourceFile="PlayActivity.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.PlayActivity$9" sourceFile="PlayActivity.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.PlayActivity$ArraysItemAdapter" sourceFile="PlayActivity.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.PlayActivity$SoundDelayedPlay" sourceFile="PlayActivity.java" interface="false" size="659" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.PlayActivity$SoundDelayedPlay$1" sourceFile="PlayActivity.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.R" sourceFile="R.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.R$anim" sourceFile="R.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.R$attr" sourceFile="R.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.R$drawable" sourceFile="R.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.R$id" sourceFile="R.java" interface="false" size="58" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.R$layout" sourceFile="R.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.R$menu" sourceFile="R.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.R$raw" sourceFile="R.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.R$string" sourceFile="R.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.R$style" sourceFile="R.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.ReceiveActivity" sourceFile="ReceiveActivity.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.SendActivity" sourceFile="SendActivity.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.example.chopsticks.WiningDetailsActivity" sourceFile="WiningDetailsActivity.java" interface="false" size="17" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.example.models" total_bugs="0" total_types="1" total_size="10">
+      <ClassStats class="com.example.models.WinItem" sourceFile="WinItem.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.example.staticdata" total_bugs="2" total_types="1" total_size="8" priority_2="1" priority_1="1">
+      <ClassStats class="com.example.staticdata.StaticData" sourceFile="StaticData.java" interface="false" size="8" bugs="2" priority_2="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="618" invocations="107" avgMicrosecondsPerInvocation="5780" maxMicrosecondsPerInvocation="187332" standardDeviationMircosecondsPerInvocation="22105"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="530" invocations="433" avgMicrosecondsPerInvocation="1224" maxMicrosecondsPerInvocation="21114" standardDeviationMircosecondsPerInvocation="2360"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="486" invocations="107" avgMicrosecondsPerInvocation="4549" maxMicrosecondsPerInvocation="122210" standardDeviationMircosecondsPerInvocation="14374"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="399" invocations="114" avgMicrosecondsPerInvocation="3504" maxMicrosecondsPerInvocation="32422" standardDeviationMircosecondsPerInvocation="7262"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="372" invocations="105" avgMicrosecondsPerInvocation="3547" maxMicrosecondsPerInvocation="39959" standardDeviationMircosecondsPerInvocation="7230"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="372" invocations="58" avgMicrosecondsPerInvocation="6422" maxMicrosecondsPerInvocation="77923" standardDeviationMircosecondsPerInvocation="13988"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="290" invocations="107" avgMicrosecondsPerInvocation="2716" maxMicrosecondsPerInvocation="41994" standardDeviationMircosecondsPerInvocation="5743"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="267" invocations="108" avgMicrosecondsPerInvocation="2476" maxMicrosecondsPerInvocation="36264" standardDeviationMircosecondsPerInvocation="5147"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="266" invocations="186" avgMicrosecondsPerInvocation="1432" maxMicrosecondsPerInvocation="13643" standardDeviationMircosecondsPerInvocation="2286"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="158" invocations="72" avgMicrosecondsPerInvocation="2206" maxMicrosecondsPerInvocation="16795" standardDeviationMircosecondsPerInvocation="3341"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="117" invocations="58" avgMicrosecondsPerInvocation="2034" maxMicrosecondsPerInvocation="17114" standardDeviationMircosecondsPerInvocation="3904"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="104" invocations="436" avgMicrosecondsPerInvocation="240" maxMicrosecondsPerInvocation="34730" standardDeviationMircosecondsPerInvocation="1655"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="96" invocations="58" avgMicrosecondsPerInvocation="1666" maxMicrosecondsPerInvocation="17226" standardDeviationMircosecondsPerInvocation="3083"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="95" invocations="364" avgMicrosecondsPerInvocation="263" maxMicrosecondsPerInvocation="3056" standardDeviationMircosecondsPerInvocation="449"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="93" invocations="94" avgMicrosecondsPerInvocation="989" maxMicrosecondsPerInvocation="33923" standardDeviationMircosecondsPerInvocation="3837"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="92" invocations="107" avgMicrosecondsPerInvocation="867" maxMicrosecondsPerInvocation="10032" standardDeviationMircosecondsPerInvocation="1577"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="91" invocations="108" avgMicrosecondsPerInvocation="846" maxMicrosecondsPerInvocation="64148" standardDeviationMircosecondsPerInvocation="6132"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="90" invocations="58" avgMicrosecondsPerInvocation="1566" maxMicrosecondsPerInvocation="16219" standardDeviationMircosecondsPerInvocation="3061"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="85" invocations="58" avgMicrosecondsPerInvocation="1480" maxMicrosecondsPerInvocation="21497" standardDeviationMircosecondsPerInvocation="3706"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.URLProblems" totalMilliseconds="84" invocations="35" avgMicrosecondsPerInvocation="2428" maxMicrosecondsPerInvocation="29757" standardDeviationMircosecondsPerInvocation="6088"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="67" invocations="72" avgMicrosecondsPerInvocation="944" maxMicrosecondsPerInvocation="4239" standardDeviationMircosecondsPerInvocation="1223"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="67" invocations="35" avgMicrosecondsPerInvocation="1937" maxMicrosecondsPerInvocation="25430" standardDeviationMircosecondsPerInvocation="4845"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="63" invocations="58" avgMicrosecondsPerInvocation="1087" maxMicrosecondsPerInvocation="17211" standardDeviationMircosecondsPerInvocation="2595"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="52" invocations="35" avgMicrosecondsPerInvocation="1485" maxMicrosecondsPerInvocation="37952" standardDeviationMircosecondsPerInvocation="6579"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="51" invocations="58" avgMicrosecondsPerInvocation="880" maxMicrosecondsPerInvocation="27798" standardDeviationMircosecondsPerInvocation="4155"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="48" invocations="4059" avgMicrosecondsPerInvocation="12" maxMicrosecondsPerInvocation="2237" standardDeviationMircosecondsPerInvocation="43"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="47" invocations="58" avgMicrosecondsPerInvocation="823" maxMicrosecondsPerInvocation="6117" standardDeviationMircosecondsPerInvocation="1461"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
